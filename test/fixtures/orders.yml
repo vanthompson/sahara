@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  sub_total: 9.99
+  sales_tax: 9.99
+  grand_total: 9.99
+
+two:
+  customer_id: 1
+  sub_total: 9.99
+  sales_tax: 9.99
+  grand_total: 9.99
