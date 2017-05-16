@@ -1,0 +1,26 @@
+<h1>Storefront#all_items</h1>
+<h4>This is where more text would go!</h4>
+<p>Give us your money!</p>
+
+
+<div class="container">
+	<div class="row">
+		<% @products.each do |product| %>
+			<div class="col-md-4 panel panel-default">
+				<div class="center-it" stlye ="height:130px">
+					<p><%= image_tag product.image.url(:thumb) %></p>
+				</div>
+					<h3><%= link_to product.name, product %></h3>
+					<p><%= number_to_currency product.price %></p>	
+					<p>Made by: <%= product.brand %></p>	
+					<p><%= product.description %></p>	
+					<p>
+						<a href="#">
+							<span class="gliphicon glyphicon-plus"></span> Quick Info
+						</a>
+					</p>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
